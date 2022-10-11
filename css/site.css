@@ -1,0 +1,87 @@
+:root {
+    --tn-primary-color: #001e43;
+    --tn-secondary-color: #ff993b;
+    --tn-dark-color: #1b1b1b;
+    --tn-light-color: #dfe3e4; 
+
+    --tn-navbar-toggler-glow: rgba(255, 153, 59, .6);
+    --tn-navbar-toggler-color: #ff993b;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+    margin-top: 4.75rem;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+/* to style the footer */
+.footer {
+    background: var(--tn-primary-color);
+    color: var(--tn-light-color);
+}
+
+.socialIcons {
+    color: var(--tn-light-color);
+    font-size: 2rem;
+    padding-left: .5rem;
+}
+
+.socialIcons:hover {
+    color: var(--tn-secondary-color);
+}
+
+/* Navbar overrides */
+/* select element with ID */
+#mainNav {
+    background: var(--tn-primary-color);
+}
+
+#mainNav button {
+    border-color: var(--tn-secondary-color);
+}
+
+.navbar-toggler {
+    color: var(--tn-navbar-dark-color);
+}
+
+.navbar-toggler-icon-tn {
+    color: var(--tn-navbar-toggler-color);
+    font-size: 1.5rem;
+}
+
+/* Navbar overrides end */
+
+/* checkbox */
+.checkList {
+    list-style-type: none;
+}
+
+/* locate the icon */
+/* compound selector */
+.checkList>li i {
+    color: var(--tn-secondary-color);
+    padding: .3rem;
+}
+
+.devIcons {
+    font-size: 4rem;
+    padding-left: .5rem;
+}
+
+.appLogo {
+    max-width: 400px;
+}
+
+/* set max width */
