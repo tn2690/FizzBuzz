@@ -1,10 +1,11 @@
 :root {
-    --tn-primary-color: #001e43;
-    --tn-secondary-color: #ff993b;
-    --tn-dark-color: #1b1b1b;
-    --tn-light-color: #dfe3e4; 
+    --tn-primary-color: rgb(41, 157, 216);
+    --tn-secondary-color: rgb(42, 198, 201);
+    --tn-dark-color: rgb(15, 22, 50);
+    --tn-light-color: rgb(42, 198, 201);
+    --tn-highlight-color: rgb(249, 253, 5);
 
-    --tn-navbar-toggler-glow: rgba(255, 153, 59, .6);
+    --tn-nav-toggler-glow: rgba(43, 230, 114, 0.6);
     --tn-navbar-toggler-color: #ff993b;
 }
 
@@ -29,17 +30,17 @@ footer {
 /* to style the footer */
 .footer {
     background: var(--tn-primary-color);
-    color: var(--tn-light-color);
+    color: var(--tn-dark-color);
 }
 
 .socialIcons {
-    color: var(--tn-light-color);
+    color: var(--tn-secondary-color);
     font-size: 2rem;
     padding-left: .5rem;
 }
 
 .socialIcons:hover {
-    color: var(--tn-secondary-color);
+    color: var(--tn-highlight-color);
 }
 
 /* Navbar overrides */
@@ -50,11 +51,11 @@ footer {
 
 #mainNav button {
     border-color: var(--tn-secondary-color);
-}
-
-.navbar-toggler {
-    color: var(--tn-navbar-dark-color);
-}
+  }
+  
+  .navbar-toggler {
+    color: var(--tn-nav-toggler-glow);
+  }
 
 .navbar-toggler-icon-tn {
     color: var(--tn-navbar-toggler-color);
@@ -81,7 +82,31 @@ footer {
 }
 
 .appLogo {
-    max-width: 400px;
+    max-width: 450px;
 }
 
 /* set max width */
+
+/* .even {
+    font-weight: bolder;
+}
+
+.odd {
+    font-weight: 100;
+} */
+
+table tbody .fizzbuzz {
+    font-weight: bolder;
+    background-color: var(--tn-navbar-toggler-color);
+}
+
+table tbody .fizz {
+    font-weight: bolder;
+    background-color: var(--tn-light-color);
+}
+
+table tbody .buzz {
+    font-weight: bolder;
+    background-color: var(--tn-nav-toggler-glow);
+}
+
