@@ -30,7 +30,7 @@ function getValues() {
   }
 }
 
-// generating fizz buzz values
+// generate fizz buzz values
 function generateFizzBuzz(stopValue) {
   let numArr = [];
 
