@@ -50,8 +50,8 @@ function displayFizzBuzz(fizArr, fizzValue, buzzValue) {
   for (let i = 0; i < fizArr.length; i++) {
     let num = fizArr[i];
     let className = "";
-
-    if (num % fizzValue == 0 && num % buzzValue == 0) { // if num is divisible by fizz or buzz values
+    // if num is divisible by fizz or buzz values
+    if (num % fizzValue == 0 && num % buzzValue == 0) { 
       num = "FizzBuzz";
       className = "fizzbuzz";
     } else if (num % fizzValue == 0) {

@@ -109,10 +109,10 @@
                           Number.isInteger(stopValue)
                         ) {
                           // pass in fizzValue, buzzValue, store in numbers
-                          let numbers = generateFizzBuzz(stopValue);
+                          let fizArr = generateFizzBuzz(stopValue);
                       
                           // display results on page
-                          displayFizzBuzz(numbers, fizzValue, buzzValue); // pass in numbers
+                          displayFizzBuzz(fizArr, fizzValue, buzzValue); // pass in numbers
                         } else {
                           Swal.fire({
                             icon: "error",
@@ -122,7 +122,7 @@
                         }
                       }
                       
-                      // generating fizz buzz values
+                      // generate fizz buzz values
                       function generateFizzBuzz(stopValue) {
                         let numArr = [];
                       
@@ -136,20 +136,23 @@
                       }
                       
                       // display the generated values
-                      function displayFizzBuzz(numbers, fizzValue, buzzValue) {
+                      function displayFizzBuzz(fizArr, fizzValue, buzzValue) {
                         let templateRows = "";
                       
-                        for (let i = 0; i < numbers.length; i++) {
-                          let num = numbers[i];
-                      
-                          if (num % fizzValue == 0 && num % buzzValue == 0) {
-                            // className = "even";
+                        for (let i = 0; i < fizArr.length; i++) {
+                          let num = fizArr[i];
+                          let className = "";
+                          
+                          // if num is divisible by fizz or buzz values
+                          if (num % fizzValue == 0 && num % buzzValue == 0) { 
                             num = "FizzBuzz";
+                            className = "fizzbuzz";
                           } else if (num % fizzValue == 0) {
-                            // className = "odd";
                             num = "Fizz";
+                            className = "fizz";
                           } else if (num % buzzValue == 0) {
                             num = "Buzz";
+                            className = "buzz";
                           }
                       
                           // wraps the table
@@ -157,7 +160,7 @@
                             templateRows += "<tr>";
                           }
                       
-                          templateRows += `<td> ${num} </td>`; // for wrap table
+                          templateRows += `<td class="${className}"> ${num} </td>`; // for wrap table
                       
                           if ((i + 1) % 5 == 0) {
                             templateRows += "</tr>";
@@ -166,7 +169,6 @@
                       
                         document.getElementById("results").innerHTML = templateRows;
                       }
-                      
                     </code>
                 </pre>
         </div>
