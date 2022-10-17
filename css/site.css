@@ -95,17 +95,17 @@ footer {
     font-weight: 100;
 } */
 
-table tbody .fizzbuzz {
+td.fizzbuzz {
     font-weight: bolder;
     background-color: var(--tn-navbar-toggler-color);
 }
 
-table tbody .fizz {
+td.fizz {
     font-weight: bolder;
     background-color: var(--tn-light-color);
 }
 
-table tbody .buzz {
+td.buzz {
     font-weight: bolder;
     background-color: var(--tn-nav-toggler-glow);
 }
