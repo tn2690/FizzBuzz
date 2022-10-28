@@ -4,6 +4,8 @@
     --tn-dark-color: rgb(15, 22, 50);
     --tn-light-color: rgb(42, 198, 201);
     --tn-highlight-color: rgb(249, 253, 5);
+    --tn-text-dark-color: rgb(0, 0, 0);
+    --tn-text-light-color: rgb(255, 255, 255);
 
     --tn-nav-toggler-glow: rgba(43, 230, 114, 0.6);
     --tn-navbar-toggler-color: #ff993b;
@@ -30,7 +32,7 @@ footer {
 /* to style the footer */
 .footer {
     background: var(--tn-primary-color);
-    color: var(--tn-dark-color);
+    color: var(--tn-text-light-color);
 }
 
 .socialIcons {
